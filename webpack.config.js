@@ -47,12 +47,14 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin({ patterns: [{ from: 'src/images', to: 'images' }] }),
     new HtmlWebpackPlugin({
-      template: './src/templates/index.hbs', filename: 'index.html', templateParameters: {
+      template: './src/templates/index.hbs',
+      filename: 'index.html',
+      templateParameters: {
         title: 'Welcome to My Website',
         heroTitle: 'Bootstrap 5 + Handlebars',
         heroText: 'This is a fully static site generated using Webpack.',
         ctaText: 'Get Started',
-        year: new Date().getFullYear(),
+        year: new Date().getFullYear()
       }
     }),
     new MiniCssExtractPlugin({ filename: 'assets/css/[name].[contenthash].css' })
