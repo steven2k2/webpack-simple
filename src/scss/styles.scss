@@ -1,0 +1,18 @@
+
+/* SCSS HEX */
+$jonquil: #FACF17ff;
+$persian-orange: #CD8C4Bff;
+$oxford-blue: #162441ff;
+$columbia-blue: #CFDBE5ff;
+$blue-gray: #70A0CDff;
+
+$primary: $jonquil;
+$secondary: $columbia-blue;
+
+// Import Bootstrap Core
+@import "bootstrap/scss/bootstrap";
+
+.hero {
+  background: url('../images/background.jpeg') no-repeat center;
+  background-size: cover;
+}
