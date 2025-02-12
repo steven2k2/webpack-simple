@@ -1,13 +1,16 @@
 # Webpack Simple
 
 ## Overview
+
+![Screenshot](src/images/screenshot.png)
+
 This is a modern, modular, and optimised Webpack setup that includes:
+
 - **Handlebars for templating**
 - **SCSS for styling**
 - **Bootstrap for UI components**
 - **Linting with StandardJS**
 - **Testing with Mocha & Chai**
-- **Live reload for development**
 
 ---
 
