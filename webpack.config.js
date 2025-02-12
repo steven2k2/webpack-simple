@@ -1,9 +1,14 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+import path from 'path'
+import { fileURLToPath } from 'url'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import CopyWebpackPlugin from 'copy-webpack-plugin'
 
-module.exports = {
+// Fix for __dirname in ESM
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+export default {
   mode: process.env.NODE_ENV || 'development',
   entry: './src/js/index.js',
   output: {
@@ -15,7 +20,8 @@ module.exports = {
   devtool: 'source-map',
   devServer: {
     static: './dist',
-    open: true
+    open: true,
+    liveReload: true // Ensures auto-reload when files change
   },
   optimization: {
     splitChunks: { chunks: 'all' }
