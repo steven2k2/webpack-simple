@@ -3,4 +3,5 @@ This project follows [StandardJS](https://standardjs.com/). Ensure your code pas
 
 ## Running Linter
 ```bash
-npx standard
+npx standard --env mocha --fix
+```
