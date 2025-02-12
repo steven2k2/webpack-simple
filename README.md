@@ -11,7 +11,7 @@ This is a modern, modular, and optimised Webpack setup that includes:
 
 ---
 
-## 📦 Installation
+## Installation
 
 Clone the repository and install dependencies:
 
@@ -23,7 +23,7 @@ npm install
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### **Start the Development Server**
 Run the following command to start the Webpack dev server with live reload:
@@ -39,7 +39,7 @@ This will:
 
 ---
 
-## 🏷 Build for Production
+## Build for Production
 To generate an optimised production build:
 
 ```bash
@@ -52,7 +52,7 @@ This will:
 
 ---
 
-## ✨ Code Quality: Linting
+## Code Quality: Linting
 
 This project uses **StandardJS** to enforce code style.
 
@@ -77,7 +77,7 @@ Linting **runs before tests** to prevent errors from breaking builds.
 
 ---
 
-## 🧬 Testing
+## Testing
 
 ### **Run Tests**
 ```bash
@@ -126,7 +126,7 @@ describe('Build Output', function () {
 
 ---
 
-## 🛠 Project Structure
+## Project Structure
 ```
 webpack-simple/
 │── dist/                 # Compiled output (not committed)
