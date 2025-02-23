@@ -2,7 +2,7 @@
 
 ## Overview
 
-![Screenshot](src/images/screenshot.png)
+![Screenshot](src/images/screencapture.png)
 
 This is a modern, modular, and optimised Webpack setup that includes:
 
