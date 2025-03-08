@@ -60,9 +60,11 @@ export default {
         heroTitle: 'Bootstrap 5 + Handlebars',
         heroText: 'This is a fully static site generated using Webpack.',
         ctaText: 'Get Started',
-        year: new Date().getFullYear()
+        year: new Date().getFullYear(),
+        deployDate: new Date().toLocaleString('en-AU', { timeZone: 'Australia/Melbourne' }) // Deployment timestamp
       }
     }),
+
     new MiniCssExtractPlugin({ filename: 'assets/css/[name].[contenthash].css' })
   ]
 }
