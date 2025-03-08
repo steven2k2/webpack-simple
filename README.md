@@ -55,6 +55,19 @@ This will:
 
 ---
 
+## Automatic Deployment
+
+This project is automatically deployed **daily at 2 PM Melbourne time (AEDT/AEST)** using **GitHub Actions**.
+
+### **How It Works**
+- The workflow builds the project and deploys the latest changes.
+- Runs on **push to `main`** and **scheduled deployment at 2 PM AEDT (3 AM UTC)**.
+- You can manually trigger the workflow in **GitHub Actions** under "Run Workflow".
+
+To check the deployment status, visit the [GitHub Actions page](https://github.com/steven2k2/webpack-simple/actions).
+
+---
+
 ## Code Quality: Linting
 
 This project uses **StandardJS** to enforce code style.
@@ -149,3 +162,4 @@ webpack-simple/
 This project follows [Standard JS](https://standardjs.com/).
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+

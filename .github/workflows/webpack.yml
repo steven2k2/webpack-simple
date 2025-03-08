@@ -5,6 +5,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  schedule:
+    - cron: '0 3 * * *' # Runs at 2 PM AEDT (3 AM UTC) - Adjust for daylight savings
 
 jobs:
   build:
